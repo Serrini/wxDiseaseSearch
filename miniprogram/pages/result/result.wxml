@@ -1,0 +1,12 @@
+<!--pages/result/result.wxml-->
+<view class="weui-cells__title">搜索结果</view>
+<block wx:for="{{list}}" wx:key="this">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="../detail/detail?id={{item.DISEASE_NAME}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">{{item.DISEASE_NAME}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+</block>
+
+<navigator url='/pages/search/search' open-type='switchTab' class='weui-cells__title'>返回</navigator>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-collapse": "../../vant-weapp/dist/collapse/index",
+    "van-collapse-item": "../../vant-weapp/dist/collapse-item/index",
+    "van-cell": "../../vant-weapp/dist/cell/index",
+    "van-cell-group": "../../vant-weapp/dist/cell-group/index"
+  }
+}

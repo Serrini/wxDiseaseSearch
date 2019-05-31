@@ -1,0 +1,72 @@
+<!--pages/detail/detail.wxml-->
+<!--<text>detail page for DISEASE id={{disease_id}}</text>-->
+<view class="weui-cells__title">{{list["DISEASE_NAME"]}}</view>
+
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item title="别名" name="1">
+    {{list["DISEASE_BYNAME"]}}
+  </van-collapse-item>
+  <van-collapse-item title="详情" name="2">
+    {{list["DISEASE_DETAIL"]}}
+  </van-collapse-item>
+  <van-collapse-item title="是否医保范畴" name="3">
+    {{list["DISEASE_INSURED"]}}
+  </van-collapse-item>
+  <van-collapse-item title="症状" name="4">
+    {{list["DISEASE_SYMPTOMS"]}}
+  </van-collapse-item>
+  <van-collapse-item title="多发人群" name="5">
+    {{list["DISEASE_MUTIPLE"]}}
+  </van-collapse-item>
+  <van-collapse-item title="多发部位" name="6">
+    {{list["DISEASE_SITE"]}}
+  </van-collapse-item>
+  <van-collapse-item title="是否遗传" name="7">
+    {{list["DISEASE_INHERIT"]}}
+  </van-collapse-item>
+  <van-collapse-item title="遗传方式" name="8">
+    {{list["DISEASE_INHERIT_METHOD"]}}
+  </van-collapse-item>
+  <van-collapse-item title="治愈率" name="9">
+    {{list["DISEASE_CURE_RATE"]}}
+  </van-collapse-item>
+  <van-collapse-item title="治愈费用" name="10">
+    {{list["DISEASE_COST"]}}
+  </van-collapse-item>
+  <van-collapse-item title="临床科室" name="11">
+    {{list["DISEASE_CLINIC_DEPARTMENT"]}}
+  </van-collapse-item>
+  <van-collapse-item title="治疗方式" name="12">
+    {{list["DISEASE_CURE_METHOD"]}}
+  </van-collapse-item>
+  <van-collapse-item title="常用药品" name="13">
+    {{list["DISEASE_DRUG"]}}
+  </van-collapse-item>
+  <van-collapse-item title="并发症" name="14">
+    {{list["DISEASE_CONCURRENT"]}}
+  </van-collapse-item>
+  <van-collapse-item title="传染类型" name="15">
+    {{list["DISEASE_INFECT_TYPE"]}}
+  </van-collapse-item>
+  <van-collapse-item title="传播路径" name="16">
+    {{list["DISEASE_ROUTE"]}}
+  </van-collapse-item>
+  <van-collapse-item title="潜伏期" name="17">
+    {{list["DISEASE_LATENTPERIOD"]}}
+  </van-collapse-item>
+  <van-collapse-item title="潜伏期症状" name="18">
+    {{list["DISEASE_LATENCY_PERFORMANCE"]}}
+  </van-collapse-item>
+  <van-collapse-item title="最佳就诊时间" name="19">
+    {{list["DISEASE_OPTIMAL_TIME"]}}
+  </van-collapse-item>
+  <van-collapse-item title="就诊前准备" name="20">
+    {{list["DISEASE_PREPARATION"]}}
+  </van-collapse-item>
+  <van-collapse-item title="相关检查" name="21">
+    {{list["DISEASE_RELEVANT_INSPECTION"]}}
+  </van-collapse-item>
+  <van-collapse-item title="相关手术" name="22">
+    {{list["DISEASE_RELEVANT_SURGERY"]}}
+  </van-collapse-item>
+</van-collapse>

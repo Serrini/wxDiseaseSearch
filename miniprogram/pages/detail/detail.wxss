@@ -1,0 +1,3 @@
+/* pages/detail/detail.wxss */
+@import "../../WeUi/weui.wxss";
+

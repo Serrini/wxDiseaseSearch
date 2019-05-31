@@ -8,7 +8,8 @@
 		"minified": true,
 		"newFeature": true,
 		"nodeModules": false,
-		"autoAudits": false
+		"autoAudits": false,
+		"uglifyFileName": false
 	},
 	"appid": "wxda1379b24d1fec33",
 	"projectname": "Demo001",
@@ -30,12 +31,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
+					"id": 0,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
 					"id": -1,
-					"name": "test2",
-					"pathName": "pages/test2/test2",
+					"name": "details",
+					"pathName": "pages/details/details",
 					"query": "",
 					"scene": null
 				}

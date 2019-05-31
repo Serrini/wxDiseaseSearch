@@ -1,0 +1,36 @@
+<!--about.wxml-->
+
+<view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='/images/wx_login.png'></image>
+        </view>
+ 
+        <view class='content'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+ 
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+
+
+
+<view wx:else class="page">
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">智能疾病查询</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">联系作者：everglow1717@gmail.com</view></view>
+        </view> 
+    </view>   
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">版本：V0.1.0</view></view>
+            <view class="weui-flex__item"><view class="placeholder">...</view></view>
+        </view>
+</view>

@@ -1,13 +1,33 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/test2/test2"
+    "pages/about/about",
+    "pages/search/search",
+    "pages/result/result",
+    "pages/detail/detail"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "images/icons/search.png",
+        "selectedIconPath": "images/icons/search_selected.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "images/icons/about.png",
+        "selectedIconPath": "images/icons/about_selected.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#4169E1"
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "智能疾病查询",
     "navigationBarTextStyle": "black"
   }
 }
